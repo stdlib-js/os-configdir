@@ -77,10 +77,10 @@ function joinPosix() {
 */
 function makeOpts() {
 	var opts = {
-		'@stdlib/os/platform': 'darwin',
-		'@stdlib/assert/is-windows': false,
-		'@stdlib/os/homedir': homedir,
-		'@stdlib/process/env': ENV,
+		'@stdlib/os-platform': 'darwin',
+		'@stdlib/assert-is-windows': false,
+		'@stdlib/os-homedir': homedir,
+		'@stdlib/process-env': ENV,
 		'path': {
 			'join': joinPosix
 		}
@@ -133,7 +133,7 @@ tape( 'the function supports Mac OS X', function test( t ) {
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/os/platform' ] = 'darwin';
+	opts[ '@stdlib/os-platform' ] = 'darwin';
 	configdir = proxyquire( mpath, opts );
 
 	t.strictEqual( configdir(), '/Beep/Boop/Library/Preferences', 'returns directory' );
@@ -145,7 +145,7 @@ tape( 'the function supports Mac OS X and appends a path', function test( t ) {
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/os/platform' ] = 'darwin';
+	opts[ '@stdlib/os-platform' ] = 'darwin';
 	configdir = proxyquire( mpath, opts );
 
 	t.strictEqual( configdir( 'appy/config' ), '/Beep/Boop/Library/Preferences/appy/config', 'returns directory' );
@@ -157,11 +157,11 @@ tape( 'the function supports Linux (XDG_CONFIG_HOME)', function test( t ) {
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/process/env' ] = {
+	opts[ '@stdlib/process-env' ] = {
 		'XDG_CONFIG_HOME': '/Beep/bop/.config',
 		'@noCallThru': true
 	};
-	opts[ '@stdlib/os/platform' ] = 'linux';
+	opts[ '@stdlib/os-platform' ] = 'linux';
 	configdir = proxyquire( mpath, opts );
 
 	t.strictEqual( configdir(), '/Beep/bop/.config', 'returns directory' );
@@ -174,11 +174,11 @@ tape( 'the function supports Linux and appends a path (XDG_CONFIG_HOME)', functi
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/process/env' ] = {
+	opts[ '@stdlib/process-env' ] = {
 		'XDG_CONFIG_HOME': '/Beep/bop/.config',
 		'@noCallThru': true
 	};
-	opts[ '@stdlib/os/platform' ] = 'linux';
+	opts[ '@stdlib/os-platform' ] = 'linux';
 	configdir = proxyquire( mpath, opts );
 
 	t.strictEqual( configdir( 'appy/config' ), '/Beep/bop/.config/appy/config', 'returns directory' );
@@ -191,10 +191,10 @@ tape( 'the function supports Linux and falls back to a `.config` directory in a 
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/process/env' ] = {
+	opts[ '@stdlib/process-env' ] = {
 		'@noCallThru': true
 	};
-	opts[ '@stdlib/os/platform' ] = 'linux';
+	opts[ '@stdlib/os-platform' ] = 'linux';
 	configdir = proxyquire( mpath, opts );
 
 	t.strictEqual( configdir(), '/Beep/Boop/.config', 'returns directory' );
@@ -207,10 +207,10 @@ tape( 'the function supports Linux and falls back to a `.config` directory in a 
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/process/env' ] = {
+	opts[ '@stdlib/process-env' ] = {
 		'@noCallThru': true
 	};
-	opts[ '@stdlib/os/platform' ] = 'linux';
+	opts[ '@stdlib/os-platform' ] = 'linux';
 	configdir = proxyquire( mpath, opts );
 
 	t.strictEqual( configdir( 'appy/config' ), '/Beep/Boop/.config/appy/config', 'returns directory' );
@@ -223,10 +223,10 @@ tape( 'the function returns `null` if unable to locate a home directory on non-W
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/process/env' ] = {
+	opts[ '@stdlib/process-env' ] = {
 		'@noCallThru': true
 	};
-	opts[ '@stdlib/os/homedir' ] = mock;
+	opts[ '@stdlib/os-homedir' ] = mock;
 
 	configdir = proxyquire( mpath, opts );
 
@@ -244,11 +244,11 @@ tape( 'the function supports Windows (LOCALAPPDATA)', function test( t ) {
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/process/env' ] = {
+	opts[ '@stdlib/process-env' ] = {
 		'LOCALAPPDATA': 'C:\\Users\\beep\\AppData\\Local',
 		'@noCallThru': true
 	};
-	opts[ '@stdlib/assert/is-windows' ] = true;
+	opts[ '@stdlib/assert-is-windows' ] = true;
 	configdir = proxyquire( mpath, opts );
 
 	t.strictEqual( configdir(), 'C:\\Users\\beep\\AppData\\Local', 'returns directory' );
@@ -261,11 +261,11 @@ tape( 'the function supports Windows and appends a path (LOCALAPPDATA)', functio
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/process/env' ] = {
+	opts[ '@stdlib/process-env' ] = {
 		'LOCALAPPDATA': 'C:\\Users\\beep\\AppData\\Local',
 		'@noCallThru': true
 	};
-	opts[ '@stdlib/assert/is-windows' ] = true;
+	opts[ '@stdlib/assert-is-windows' ] = true;
 	opts[ 'path' ] = {
 		'join': join
 	};
@@ -285,11 +285,11 @@ tape( 'the function supports Windows (APPDATA)', function test( t ) {
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/process/env' ] = {
+	opts[ '@stdlib/process-env' ] = {
 		'APPDATA': 'C:\\Users\\beep\\AppData\\Roaming',
 		'@noCallThru': true
 	};
-	opts[ '@stdlib/assert/is-windows' ] = true;
+	opts[ '@stdlib/assert-is-windows' ] = true;
 	configdir = proxyquire( mpath, opts );
 
 	t.strictEqual( configdir(), 'C:\\Users\\beep\\AppData\\Roaming', 'returns directory' );
@@ -302,11 +302,11 @@ tape( 'the function supports Windows and appends a path (APPDATA)', function tes
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/process/env' ] = {
+	opts[ '@stdlib/process-env' ] = {
 		'LOCALAPPDATA': 'C:\\Users\\beep\\AppData\\Roaming',
 		'@noCallThru': true
 	};
-	opts[ '@stdlib/assert/is-windows' ] = true;
+	opts[ '@stdlib/assert-is-windows' ] = true;
 	opts[ 'path' ] = {
 		'join': join
 	};
@@ -326,10 +326,10 @@ tape( 'the function returns `null` if unable to locate an application data direc
 	var opts;
 
 	opts = makeOpts();
-	opts[ '@stdlib/process/env' ] = {
+	opts[ '@stdlib/process-env' ] = {
 		'@noCallThru': true
 	};
-	opts[ '@stdlib/assert/is-windows' ] = true;
+	opts[ '@stdlib/assert-is-windows' ] = true;
 
 	configdir = proxyquire( mpath, opts );
 
