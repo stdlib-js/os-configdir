@@ -20,7 +20,7 @@ limitations under the License.
 
 # configdir
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Return a directory for user-specific configuration files.
 
@@ -164,6 +164,21 @@ e.g., /Users/<username>/Library/Preferences
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/os/homedir`][@stdlib/os/homedir]</span><span class="delimiter">: </span><span class="description">return the current user's home directory.</span>
+-   <span class="package-name">[`@stdlib/os/tmpdir`][@stdlib/os/tmpdir]</span><span class="delimiter">: </span><span class="description">return the directory for storing temporary files.</span>
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -209,8 +224,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/os-configdir/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/os-configdir?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/os-configdir.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/os-configdir/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
@@ -223,7 +242,13 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [environment-variable-windows]: https://en.wikipedia.org/wiki/Environment_variable#Windows
 
+<!-- <related-links> -->
+
 [@stdlib/os/homedir]: https://github.com/stdlib-js/os-homedir
+
+[@stdlib/os/tmpdir]: https://github.com/stdlib-js/os-tmpdir
+
+<!-- </related-links> -->
 
 </section>
 
