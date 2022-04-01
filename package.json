@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/os-configdir",
+  "version": "0.0.0",
+  "description": "Return a directory for user-specific configuration files.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/os-configdir.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utils",
+    "util",
+    "configdir",
+    "dir",
+    "directory",
+    "config",
+    "confighome",
+    "conf",
+    "user",
+    "os",
+    "windows",
+    "darwin",
+    "linux",
+    "mac",
+    "pc"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
