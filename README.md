@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/os-configdir/tags). For example,
+
+```javascript
 import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@v0.2.2-esm/index.mjs';
 ```
 
@@ -103,7 +108,7 @@ On non-Windows platforms, if the function is unable to locate the current user's
 <body>
 <script type="module">
 
-import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@v0.2.2-esm/index.mjs';
+import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@esm/index.mjs';
 
 console.log( configdir( 'appy/config' ) );
 
