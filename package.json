@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/os-configdir",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Return a directory for user-specific configuration files.",
   "license": "Apache-2.0",
   "author": {
@@ -45,10 +45,10 @@
     "@stdlib/cli-ctor": "^0.2.1",
     "@stdlib/fs-read-file": "^0.2.1",
     "@stdlib/os-homedir": "^0.2.1",
-    "@stdlib/os-platform": "^0.2.1",
-    "@stdlib/process-env": "^0.2.1",
-    "@stdlib/string-format": "^0.2.1",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
+    "@stdlib/os-platform": "^0.2.2",
+    "@stdlib/process-env": "^0.2.2",
+    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-absolute-path": "^0.2.1",
