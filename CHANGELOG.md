@@ -2,6 +2,50 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2024-09-22)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`1ca9f87`](https://github.com/stdlib-js/stdlib/commit/1ca9f8750c23a1f412bf6510ef84cf52ad6ddc7d) - include null in return type
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`1ca9f87`](https://github.com/stdlib-js/stdlib/commit/1ca9f8750c23a1f412bf6510ef84cf52ad6ddc7d) - **fix:** include null in return type _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-27)
