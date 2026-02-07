@@ -45,19 +45,33 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/os-configdir
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/os-configdir/tags). For example,
-
-```javascript
-import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@v0.2.3-deno/mod.js';
+var configdir = require( '@stdlib/os-configdir' );
 ```
 
 #### configdir( \[path] )
@@ -103,7 +117,7 @@ On non-Windows platforms, if the function is unable to locate the current user's
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@deno/mod.js';
+var configdir = require( '@stdlib/os-configdir' );
 
 console.log( configdir( 'appy/config' ) );
 ```
@@ -112,7 +126,59 @@ console.log( configdir( 'appy/config' ) );
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/os-configdir-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: configdir [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ configdir
+e.g., /Users/<username>/Library/Preferences
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -146,7 +212,7 @@ console.log( configdir( 'appy/config' ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -176,8 +242,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/os-configdir.svg
 [npm-url]: https://npmjs.org/package/@stdlib/os-configdir
 
-[test-image]: https://github.com/stdlib-js/os-configdir/actions/workflows/test.yml/badge.svg?branch=v0.2.3
-[test-url]: https://github.com/stdlib-js/os-configdir/actions/workflows/test.yml?query=branch:v0.2.3
+[test-image]: https://github.com/stdlib-js/os-configdir/actions/workflows/test.yml/badge.svg?branch=v0.2.4
+[test-url]: https://github.com/stdlib-js/os-configdir/actions/workflows/test.yml?query=branch:v0.2.4
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/os-configdir/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/os-configdir?branch=main
@@ -217,9 +283,9 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/os/homedir]: https://github.com/stdlib-js/os-homedir/tree/deno
+[@stdlib/os/homedir]: https://github.com/stdlib-js/os-homedir
 
-[@stdlib/os/tmpdir]: https://github.com/stdlib-js/os-tmpdir/tree/deno
+[@stdlib/os/tmpdir]: https://github.com/stdlib-js/os-tmpdir
 
 <!-- </related-links> -->
 
