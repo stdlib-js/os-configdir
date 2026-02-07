@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@esm/index.mjs';
+import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@v0.2.4-esm/index.mjs';
 ```
 
 #### configdir( \[path] )
@@ -103,7 +103,7 @@ On non-Windows platforms, if the function is unable to locate the current user's
 <body>
 <script type="module">
 
-import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@esm/index.mjs';
+import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@v0.2.4-esm/index.mjs';
 
 console.log( configdir( 'appy/config' ) );
 
