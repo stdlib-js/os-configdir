@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+configdir = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/os-configdir/tags). For example,
+
+```javascript
 configdir = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@v0.2.4-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var configdir = require( 'path/to/vendor/umd/os-configdir/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@v0.2.4-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -125,7 +130,7 @@ On non-Windows platforms, if the function is unable to locate the current user's
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@v0.2.4-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
