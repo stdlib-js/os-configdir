@@ -172,16 +172,16 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/os-configdir-cli.svg
 [npm-url]: https://npmjs.org/package/@stdlib/os-configdir-cli
 
-[test-image]: https://github.com/stdlib-js/os-configdir/actions/workflows/test.yml/badge.svg?branch=v0.2.4
-[test-url]: https://github.com/stdlib-js/os-configdir/actions/workflows/test.yml?query=branch:v0.2.4
+[test-image]: https://github.com/stdlib-js/os-configdir@v0.2.4/actions/workflows/test.yml/badge.svg?branch=v0.2.4
+[test-url]: https://github.com/stdlib-js/os-configdir@v0.2.4/actions/workflows/test.yml?query=branch:v0.2.4
 
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/os-configdir/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/os-configdir?branch=main
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/os-configdir@v0.2.4/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/os-configdir@v0.2.4?branch=main
 
 <!--
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/os-configdir.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/os-configdir/main
+[dependencies-image]: https://img.shields.io/david/stdlib-js/os-configdir@v0.2.4.svg
+[dependencies-url]: https://david-dm.org/stdlib-js/os-configdir@v0.2.4/main
 
 -->
 
@@ -192,22 +192,22 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
-[cli-section]: https://github.com/stdlib-js/os-configdir#cli
-[cli-url]: https://github.com/stdlib-js/os-configdir/tree/cli
-[@stdlib/os-configdir]: https://github.com/stdlib-js/os-configdir/tree/main
+[cli-section]: https://github.com/stdlib-js/os-configdir@v0.2.4#cli
+[cli-url]: https://github.com/stdlib-js/os-configdir@v0.2.4/tree/cli
+[@stdlib/os-configdir]: https://github.com/stdlib-js/os-configdir@v0.2.4/tree/main
 
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-[deno-url]: https://github.com/stdlib-js/os-configdir/tree/deno
-[deno-readme]: https://github.com/stdlib-js/os-configdir/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/os-configdir/tree/umd
-[umd-readme]: https://github.com/stdlib-js/os-configdir/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/os-configdir/tree/esm
-[esm-readme]: https://github.com/stdlib-js/os-configdir/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/os-configdir/blob/main/branches.md
+[deno-url]: https://github.com/stdlib-js/os-configdir@v0.2.4/tree/deno
+[deno-readme]: https://github.com/stdlib-js/os-configdir@v0.2.4/blob/deno/README.md
+[umd-url]: https://github.com/stdlib-js/os-configdir@v0.2.4/tree/umd
+[umd-readme]: https://github.com/stdlib-js/os-configdir@v0.2.4/blob/umd/README.md
+[esm-url]: https://github.com/stdlib-js/os-configdir@v0.2.4/tree/esm
+[esm-readme]: https://github.com/stdlib-js/os-configdir@v0.2.4/blob/esm/README.md
+[branches-url]: https://github.com/stdlib-js/os-configdir@v0.2.4/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/os-configdir/main/LICENSE
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/os-configdir@v0.2.4/main/LICENSE
 
 [environment-variable-windows]: https://en.wikipedia.org/wiki/Environment_variable#Windows
 
