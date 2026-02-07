@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@deno/mod.js';
+import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@v0.2.4-deno/mod.js';
 ```
 
 #### configdir( \[path] )
@@ -98,7 +98,7 @@ On non-Windows platforms, if the function is unable to locate the current user's
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@deno/mod.js';
+import configdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-configdir@v0.2.4-deno/mod.js';
 
 console.log( configdir( 'appy/config' ) );
 ```
