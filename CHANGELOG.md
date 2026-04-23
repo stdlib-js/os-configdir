@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-04-23)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`862322b`](https://github.com/stdlib-js/stdlib/commit/862322bd3afbd28c1ff58fdc3ee8f85ca2eb43ea) - **chore:** add missing keyword [(#11733)](https://github.com/stdlib-js/stdlib/pull/11733) _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.4">
 
 ## 0.2.4 (2026-02-07)
